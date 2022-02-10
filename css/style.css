@@ -1,0 +1,51 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.main {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main-content {
+  flex: 1 1 auto;
+  font-size: 0;
+}
+.main-content__side-1, .main-content__side-2 {
+  width: 10%;
+  float: left;
+  background: green;
+  overflow: hidden;
+  resize: vertical;
+  font-size: 16px;
+}
+.main-content__side-2 {
+  background: red;
+  clear: left;
+}
+.main-content__content {
+  width: 90%;
+  font-size: 16px;
+  background: yellow;
+  float: right;
+}
+.main-content__image {
+  float: left;
+  padding: 10px 20px;
+}
+
+.header, .footer {
+  background: #ccc;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  .main-content__side-1, .main-content__side-2, .main-content__content {
+    width: auto;
+    float: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
